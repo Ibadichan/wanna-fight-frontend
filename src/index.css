@@ -1,6 +1,73 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: Roboto, system-ui, sans-serif;
+
+  --font-size-xs: 12px;
+  --line-height-xs: 20px;
+  --font-size-sm: 14px;
+  --line-height-sm: 24px;
+  --font-size-base: 16px;
+  --line-height-base: 26px;
+  --font-size-lg: 18px;
+  --line-height-lg: 30px;
+
+  --color-old-dark: #222222;
+  --color-dark: #333333;
+
+  --color-cool-gray: #f8f9fb;
+  --color-steel-gray: #5b6a7d;
+  --color-frost-gray: #dee3ed;
+
+  --color-sky-blue: #2484fc;
+  --color-cloud-blue: #e1eaf6;
+  --color-charcoal-blue: #111923;
+  --color-midnight-blue: #243142;
+  --color-silver-blue: #a1aab5;
+
+  --color-teal: #00a1b3;
+  --color-teal-dark: #008a9a;
+  --color-teal-light: #cbf0e9;
+
+  --color-earls-green: #cbe417;
+
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-55: 55px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-70: 70px;
+  --spacing-75: 75px;
+  --spacing-80: 80px;
+
+  --border-radius-3: 3px;
+  --border-radius-5: 5px;
+  --border-radius-10: 10px;
+  --border-radius-20: 20px;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply m-0 min-h-screen min-w-[320px] bg-white p-0 font-sans text-base font-normal break-words text-dark dark:font-[350];
+  }
+}
+
+@layer components {
+  /* components */
+}
+
 @utility container {
-  margin-inline: auto;
-  padding-inline: 2rem;
+  @apply ml-auto mr-auto w-full max-w-full px-5 lg:max-w-[1140px] lg:px-15;
 }
